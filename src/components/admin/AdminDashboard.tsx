@@ -3,7 +3,7 @@
 import React, { useEffect, useState, useCallback } from 'react';
 
 interface Message { id: number; name: string; email: string; subject: string; message: string; createdAt: string; }
-interface Project { id: number; title: string; category: string; images: string[]; videos: string[]; col: string; specType: 'default' | 'physical' | 'digital'; length?: string; breadth?: string; pixels?: string; }
+interface Project { id: number; title: string; category: string; images: string[]; videos: string[]; col: string; specType?: 'default' | 'physical' | 'digital'; length?: string; breadth?: string; pixels?: string; }
 interface Blog { id: number; title: string; category: string; image: string; date: string; videoUrl?: string; isYoutube?: boolean; }
 
 interface Stats { views: number; clicks: number; time: string; }
