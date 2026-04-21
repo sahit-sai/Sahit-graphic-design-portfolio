@@ -113,7 +113,7 @@ function AdminDashboard() {
   const openModal = (config: any) => { setModalConfig(config); setModalOpen(true); };
   const closeModal = () => setModalOpen(false);
 
-  const handleFileUpload = async (e: React.ChangeEvent<HTMLInputElement>, target: 'project' | 'profile' = 'project') => {
+  const handleFileUpload = async (e: React.ChangeEvent<HTMLInputElement>, target: string = 'project') => {
     if (!e.target.files) return;
     setIsSubmitting(true);
     const formData = new FormData();
