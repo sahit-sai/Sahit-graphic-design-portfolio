@@ -1,0 +1,63 @@
+[
+  {
+    "id": 1,
+    "col": "6",
+    "image": "assets/images/projects/work1.jpg",
+    "title": "Glasses of Cocktail",
+    "category": "Branding",
+    "images": [
+      "assets/uploads/1776712248141-f3ee83c9-5dde-4912-b0b4-4111328db5e8-2026-04-13.png"
+    ],
+    "videos": [
+      null
+    ],
+    "specType": "default",
+    "length": "",
+    "breadth": "",
+    "pixels": ""
+  },
+  {
+    "id": 2,
+    "col": "6",
+    "image": "assets/images/projects/work2.jpg",
+    "title": "A Branch with Flowers",
+    "category": "Mockup",
+    "images": [
+      "assets/images/projects/work2.jpg"
+    ],
+    "videos": []
+  },
+  {
+    "id": 3,
+    "col": "4",
+    "image": "assets/images/projects/work3.jpg",
+    "title": "Orange Rose Flower",
+    "category": "Video",
+    "images": [
+      "assets/images/projects/work3.jpg"
+    ],
+    "videos": []
+  },
+  {
+    "id": 4,
+    "col": "4",
+    "image": "assets/images/projects/work4.jpg",
+    "title": "Green Plant on a Desk",
+    "category": "Branding",
+    "images": [
+      "assets/images/projects/work4.jpg"
+    ],
+    "videos": []
+  },
+  {
+    "id": 5,
+    "col": "4",
+    "image": "assets/images/projects/work5.jpg",
+    "title": "Orange Rose Flower",
+    "category": "Mockup",
+    "images": [
+      "assets/images/projects/work5.jpg"
+    ],
+    "videos": []
+  }
+]

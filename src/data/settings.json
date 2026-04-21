@@ -1,0 +1,61 @@
+{
+  "name": "Sahit Sai",
+  "bio": "Hi, I’m Sahit, a passionate Graphic Designer and Video Editor dedicated to creating user-friendly digital experiences.",
+  "profilePic": "https://wchwxyojdncvchaniium.supabase.co/storage/v1/object/public/nino-assets/1776754152035-IMG-20241007-WA0045.jpg",
+  "reviewCount": "100+ reviews",
+  "reviewRating": "(4.96 of 5)",
+  "reviewText": "Five-star reviews from my esteemed clients.",
+  "reviewAvatars": [
+    "assets/uploads/1776715230814-IMG-20241007-WA0045.jpg",
+    "assets/uploads/1776715223700-IMG-20241007-WA0045.jpg",
+    "assets/uploads/1776715087584-IMG-20241007-WA0045.jpg"
+  ],
+  "experienceYears": 2,
+  "completedProjects": 25,
+  "satisfactionRate": 98,
+  "brands": [
+    "assets/uploads/1776714762878-aiv-edited.png",
+    "assets/uploads/1776714755666-IMG-20241007-WA0045.jpg",
+    "assets/uploads/1776714748867-aiv-edited.png",
+    "assets/uploads/1776714744637-f3ee83c9-5dde-4912-b0b4-4111328db5e8-2026-04-13.png",
+    "assets/uploads/1776714741057-logo-6.png",
+    "assets/uploads/1776714492078-logo-6.png"
+  ],
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Zonathon Doe",
+      "role": "CEO & Founder X",
+      "text": "Financial planners help people to knowledge in about how to invest and in save their money the most efficient way.",
+      "authorImg": "assets/uploads/1776714788587-IMG-20241007-WA0045.jpg"
+    },
+    {
+      "id": 1776714792227,
+      "name": "vhn",
+      "role": "ceo",
+      "text": "Financial planners help people to knowledge in about how to invest and in save their money the most efficient way.",
+      "authorImg": "assets/uploads/1776714795726-aiv-edited.png"
+    },
+    {
+      "id": 1776714806094,
+      "name": "jkv",
+      "role": "jvb",
+      "text": "xcjkv",
+      "authorImg": "assets/uploads/1776714809548-f3ee83c9-5dde-4912-b0b4-4111328db5e8-2026-04-13.png"
+    },
+    {
+      "id": 1776714862494,
+      "name": "lfv",
+      "role": "kjn",
+      "text": "vnf",
+      "authorImg": "assets/uploads/1776714865653-f3ee83c9-5dde-4912-b0b4-4111328db5e8-2026-04-13.png"
+    },
+    {
+      "id": 1776714866611,
+      "name": "lfmv",
+      "role": "jlvkm",
+      "text": "kmvf",
+      "authorImg": "assets/uploads/1776714871282--X.png"
+    }
+  ]
+}

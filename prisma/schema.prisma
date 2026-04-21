@@ -1,0 +1,48 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+model Project {
+  id        Int      @id @default(autoincrement())
+  title     String
+  category  String
+  images    String[]
+  videos    String[]
+  col       String   @default("6")
+  specType  String   @default("default")
+  length    String?
+  breadth   String?
+  pixels    String?
+  createdAt DateTime @default(now())
+}
+
+model Blog {
+  id        Int      @id @default(autoincrement())
+  title     String
+  category  String
+  image     String   @default("assets/images/blog/blog1.jpg")
+  date      String
+  createdAt DateTime @default(now())
+}
+
+model Message {
+  id        Int      @id @default(autoincrement())
+  name      String
+  email     String
+  subject   String
+  message   String
+  createdAt DateTime @default(now())
+}
+
+model Settings {
+  id         Int    @id @default(1)
+  name       String
+  bio        String
+  profilePic String
+}

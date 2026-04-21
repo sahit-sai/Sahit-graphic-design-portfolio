@@ -1,0 +1,16 @@
+[
+  {
+    "id": 2,
+    "image": "assets/images/blog/blog2.jpg",
+    "category": "Branding",
+    "date": "Aug 28",
+    "title": "Starting and Growing a Career in Web Design"
+  },
+  {
+    "id": 3,
+    "image": "assets/images/blog/blog3.jpg",
+    "category": "Design",
+    "date": "Aug 28",
+    "title": "How Can Designers Prepare for the Future?"
+  }
+]
