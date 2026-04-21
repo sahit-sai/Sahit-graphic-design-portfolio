@@ -211,7 +211,7 @@ function AdminDashboard() {
       });
       if (res.ok) {
         await fetchData();
-        setNewProject({ id: 0, title: '', category: '', images: [], videos: [], col: '6' });
+        setNewProject({ id: 0, title: '', category: '', images: [], videos: [], col: '6', specType: 'default', length: '', breadth: '', pixels: '' });
         setEditingProject(null);
         showNotification(editingProject ? 'Structural data updated.' : 'New project captured.');
       } else {
