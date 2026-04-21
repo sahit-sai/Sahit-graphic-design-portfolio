@@ -115,6 +115,7 @@ function AdminDashboard() {
 
   const handleFileUpload = async (e: React.ChangeEvent<HTMLInputElement>, target: string = 'project') => {
     if (!e.target.files) return;
+    const t = target as any; // BYPASS TS NARROWING
     setIsSubmitting(true);
     const formData = new FormData();
     Array.from(e.target.files).forEach(file => formData.append('files', file));
@@ -123,9 +124,9 @@ function AdminDashboard() {
       const res = await fetch('/api/upload', { method: 'POST', body: formData });
       const data = await res.json();
       if (data.paths) {
-        if (target === 'profile') {
+        if (t === 'profile') {
           setSettings(prev => ({ ...prev, profilePic: data.paths[0] }));
-        } else if (target === 'project') {
+        } else if (t === 'project') {
           const uploadedImages = data.paths.filter((p: string) => /\.(jpg|jpeg|png|gif|webp)$/i.test(p));
           const uploadedVideos = data.paths.filter((p: string) => /\.(mp4|webm|ogg)$/i.test(p));
           setNewProject(prev => ({
@@ -133,26 +134,24 @@ function AdminDashboard() {
             images: [...prev.images, ...uploadedImages],
             videos: [...prev.videos, ...uploadedVideos]
           }));
-        } else if (target === 'brand') {
+        } else if (t === 'brand') {
           setSettings(prev => ({ ...prev, brands: [...prev.brands, ...data.paths] }));
-        } else if (target.startsWith('brand-')) {
-          const idx = parseInt(target.split('-')[1]);
+        } else if (t.startsWith('brand-')) {
+          const idx = parseInt(t.split('-')[1]);
           const nextBrands = [...settings.brands];
           nextBrands[idx] = data.paths[0];
           setSettings(prev => ({ ...prev, brands: nextBrands }));
-        } else if (target.startsWith('reviewAvatar-')) {
-          const idx = parseInt(target.split('-')[1]);
+        } else if (t.startsWith('reviewAvatar-')) {
+          const idx = parseInt(t.split('-')[1]);
           const nextAvatars = [...settings.reviewAvatars];
           nextAvatars[idx] = data.paths[0];
           setSettings(prev => ({ ...prev, reviewAvatars: nextAvatars }));
-        } else if (target.startsWith('testimonial-')) {
-
-
-          const idx = parseInt(target.split('-')[1]);
+        } else if (t.startsWith('testimonial-')) {
+          const idx = parseInt(t.split('-')[1]);
           const nextTestimonials = [...settings.testimonials];
           nextTestimonials[idx].authorImg = data.paths[0];
           setSettings(prev => ({ ...prev, testimonials: nextTestimonials }));
-        } else if (target === 'blog-video') {
+        } else if (t === 'blog-video') {
           setNewBlog(prev => ({ ...prev, videoUrl: data.paths[0], isYoutube: false }));
         }
         showNotification(`${data.paths.length} assets integrated.`);
